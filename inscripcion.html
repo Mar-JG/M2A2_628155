@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Inscripción</title>
+</head>
+
+<body>
+    <h1>Formulario de inscripción</h1>
+    
+<table border ="1" cellpadding="1">
+    <form action="" method="POST">
+    <tr>
+        <tr>
+            <td>Nombre</td>
+            <td><input type="text" minlength="3" maxlength="15" required>
+        </tr>
+        <tr>
+            <td>Correo</td>
+            <td><input type="email" required></td>
+        </tr>
+        <tr>
+            <td>Edad</td>
+            <td><input type="number" min="12" max="40" required></td>
+        </tr>
+        <tr>
+            <td>Nickname</td>
+            <td><input type="text" pattern="[A-Za-z0-9]+" required></td>
+        </tr>
+        <tr>
+            <td>Categoría</td>
+            <td><input type="radio" id="principiante" name="categoria" value="principiante" required>
+            <label for="printipiante">Principiante</label>
+
+            <input type="radio" id="intermedio" name="categoria" value="intermedio" required>
+            <label for="intermedio">Intermedio</label>
+
+            <input type="radio" id="avanzado" name="categoria" value="avanzado" required>
+            <label for="avanzado">Avanzado</label>
+        </tr>
+        <tr>
+            <td>Juegos Favoritos:</td>
+            <td><input type="checkbox" id="fortnite" name="juego" value="fortnite">
+            <label for="fortnite">Fortnite</label>
+
+            <input type="checkbox" id="mariokart" name="juego" value="mariokart">
+            <label for="mariokart">Mario Kart</label>
+
+            <input type="checkbox" id="minecraft" name="juego" value="minecraft">
+            <label for="minecraft">Minecraft</label>
+
+            <input type="checkbox" id="smashbros" name="juego" value="smashbros">
+            <label for="smashbros">Smash Bros</label></td>
+        </tr>
+        <tr>
+            <td>Fecha Inscripción:</td>
+            <td><input type="date" min="2025-01-01" max="2025-12-31" required></td>
+        </tr>
+        <tr>
+            <td colspan ="2"><input type="submit" value="Enviar"><input type="reset" value="Restablecer"></td>
+        </tr>
+    </tr>
+    </form>
+</table>
+</body>
+</html>
